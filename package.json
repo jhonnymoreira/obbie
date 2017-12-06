@@ -1,0 +1,22 @@
+{
+  "name": "obbie",
+  "version": "0.0.1",
+  "description": "Ruby Hash methods in JavaScript Object",
+  "main": "index.js",
+  "repository": "git@github.com:jhonnymoreira/obbie.git",
+  "author": "Jhonny Moreira <me.jhonnymoreira@gmail.com>",
+  "contributors": [
+    "Alexandre Wiechers <wiechersv@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.13.1",
+    "eslint-plugin-jest": "^21.5.0",
+    "jest": "^21.2.1"
+  }
+}
