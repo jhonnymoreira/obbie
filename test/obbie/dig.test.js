@@ -2,19 +2,19 @@ import dig from '../../lib/obbie/dig'
 import object from '../mocks/filledObject'
 
 describe('dig', () => {
-  it('returns the value from a path', () => {
+  it('returns the value from a key sequence', () => {
     expect(dig(object, 'a', 'b', 'c')).toEqual(1)
   })
 
-  it('supports Array as path argument', () => {
+  it('supports Array as key sequence argument', () => {
     expect(dig(object, ['a', 'b', 'c'])).toEqual(1)
   })
 
-  it('returns "undefined" if last step doesn\'t exist', () => {
+  it('returns "undefined" if last step of key sequence doesn\'t exist', () => {
     expect(dig(object, 'a', 'b', 'd')).toBeUndefined()
   })
 
-  it('throws if path tail has an undefined step', () => {
+  it('throws if key sequence tail has an undefined step', () => {
     expect(() => dig(object, 'a', 'c', 1)).toThrow()
   })
 })
