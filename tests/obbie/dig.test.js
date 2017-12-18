@@ -10,6 +10,10 @@ describe('dig', () => {
     expect(dig(object, ['a', 'b', 'c'])).toEqual(1)
   })
 
+  it('supports Array indexes as part of the key sequence', () => {
+    expect(dig(object, 'a', 'e', 0, 'f')).toEqual(1)
+  })
+
   it('returns "undefined" if last step of key sequence doesn\'t exist', () => {
     expect(dig(object, 'a', 'b', 'd')).toBeUndefined()
   })
