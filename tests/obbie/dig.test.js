@@ -1,5 +1,5 @@
 import dig from '../../lib/obbie/dig'
-import object from '../mocks/filledObject'
+import object from '../mocks/object'
 
 describe('dig', () => {
   it('returns the value from a key sequence', () => {
