@@ -1,5 +1,11 @@
 import dig from '../../lib/obbie/dig'
-import object from '../mocks/object'
+
+const object = {
+  a: {
+    b: { c: 1 },
+    e: [{ f: 1 }]
+  }
+}
 
 describe('dig', () => {
   it('returns the value from a key sequence', () => {
