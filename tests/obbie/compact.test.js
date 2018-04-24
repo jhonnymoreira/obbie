@@ -1,17 +1,20 @@
 import compact from '../../lib/obbie/compact'
-import object from '../mocks/object'
+
+const object = {
+  a: 1,
+  b: 2
+}
 
 describe('compact', () => {
   it('removes "null" values on given object', () => {
-    expect(compact(object)).toMatchObject({
-      a: {
-        b: {
-          c: 1
-        },
-        e: [
-          { f: 1 }
-        ]
-      }
-    })
+    const objectWithNullProperty = Object.assign({}, object, { c: null })
+
+    expect(compact(objectWithNullProperty)).toMatchObject(object)
+  })
+
+  it('removes "undefined" values on given object', () => {
+    const objectWithUndefinedProperty = Object.assign({}, object, { c: undefined })
+
+    expect(compact(objectWithUndefinedProperty)).toMatchObject(object)
   })
 })
