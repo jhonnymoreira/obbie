@@ -1,17 +1,16 @@
 import compact from '../../lib/obbie/compact'
-import object from '../mocks/object'
+
+const object = {
+  a: 1,
+  b: 2,
+  c: null
+}
 
 describe('compact', () => {
   it('removes "null" values on given object', () => {
     expect(compact(object)).toMatchObject({
-      a: {
-        b: {
-          c: 1
-        },
-        e: [
-          { f: 1 }
-        ]
-      }
+      a: 1,
+      b: 2
     })
   })
 })
