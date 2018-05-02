@@ -26,6 +26,74 @@ const oddValues = deleteIf(
 
 ## API
 
+### `compact(object: object) => object`
+
+Removes "null" values from the first layer of a given object.
+
+```javascript
+import { compact } from 'obbie'
+
+compact({ a: null, b: undefined, c: 3 })
+//=> { c: 3 }
+
+// It won't go deep inside the given object.
+compact({ a: { b: null } })
+//=> { a: { b: null } }
+```
+
+### `deleteIf(object: object, expectation: ?Function = (() => {})) => object`
+
+Removes entries matching a given expectation.
+
+```javascript
+import { deleteIf } from 'obbie'
+
+const myObject = { a: 1, b: 2, c: 3 }
+
+deleteIf(myObject,
+         (key, value) => (value % 2) === 0)
+//=> { a: 1, b: 2 }
+
+deleteIf(myObject)
+//=> { a: 1, b: 2, c: 3 }
+```
+
+### `dig(object: object, ...keySequence: number|string|Array<number|string>)`
+
+Returns the value of a key sequence searched in a given object.
+
+```javascript
+import { dig } from 'obbie'
+
+const myObject = {
+  a: {
+    b: {
+      c: [1, 2, 3]
+    }
+  }
+}
+
+dig(myObject, 'a', 'b', 'c', 1)
+//=> 2
+
+dig(myObject, ['a', 'b', 'c', 1])
+//=> 2
+```
+
+### `length(object: object) => number`
+
+Returns the amount of entries in a given object.
+
+```javascript
+import { length } from 'obbie'
+
+length({ a: 1, b: undefined, c: 3, d: null })
+//=> 4
+
+length({ a: 1, b: 2 })
+//=> 2
+```
+
 ## License
 
 MIT License
