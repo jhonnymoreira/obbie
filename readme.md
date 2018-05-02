@@ -12,7 +12,7 @@ import { deleteIf } from 'obbie'
 const myObject = { a: 1, b: 2, c: 3 }
 const oddValues = deleteIf(
   myObject,
-  (_, value) => value % 2
+  (_, value) => (value % 2) === 0
 ) //=> { a: 1, c: 3 }
 ```
 
