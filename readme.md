@@ -4,6 +4,14 @@ Obbie aims to make available Ruby's Hash methods to JavaScript as a collection o
 
 **Note:** All functions won't mutate the object passed as argument. Methods such `delete_if`, which mutates the given object in Ruby, won't have mutation here in JavaScript.
 
+## Installation
+
+`npm install obbie`
+
+or
+
+`yarn install obbie`
+
 ## Usage
 
 ```javascript
