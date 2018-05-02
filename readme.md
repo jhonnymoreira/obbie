@@ -2,7 +2,7 @@
 
 Obbie aims to make available Ruby's Hash methods to JavaScript as a collection of functions.
 
-**Note:** All functions are immutable. Methods such as `delete_if`, `clear` and a few others which mutates the original object, are all treated to be immutable!
+**Note:** All functions won't mutate the object passed as argument. Methods such `delete_if`, which mutates the given object in Ruby, won't have mutation here in JavaScript.
 
 ## Usage
 
