@@ -58,7 +58,7 @@ deleteIf(myObject)
 //=> { a: 1, b: 2, c: 3 }
 ```
 
-### `dig(object: object, ...keySequence: number|string|Array<number|string>)`
+### `dig(object: object, ...keySequence: number|string|Array<number|string>) => any`
 
 Returns the value of a key sequence searched in a given object.
 
