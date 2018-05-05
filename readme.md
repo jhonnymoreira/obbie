@@ -80,6 +80,34 @@ dig(myObject, ['a', 'b', 'c', 1])
 //=> 2
 ```
 
+### `fetch(object: object, key: string, defaultValue: any) => any`
+
+Fetches a value from a given key in the object passed.
+
+```javascript
+import { fetch } from 'obbie'
+
+fetch({ a: 1, b: 2 }, 'b')
+//=> 2
+
+fetch({ a: 1, b: 2 }, 'c', 'I love memes')
+//=> 'I love memes'
+
+// It ignores the default value if key returns a value
+fetch({ a: 1, b: 2 }, 'b', 'I love memes')
+//=> 2
+
+fetch({ a: 1, b: 2 }, 'c')
+//=> throws 'KeyError: key not found: "c"'
+
+fetch({ a: 1, b: 2 }, 'c', key => `The key is: ${key}`)
+//=> "The key is: c"
+
+// Returns "null" if default value is a function returning "undefined"
+fetch({ a: 1, b: 2 }, 'c', () => {})
+//=> null
+```
+
 ### `length(object: object) => number`
 
 Returns the amount of entries in a given object.
