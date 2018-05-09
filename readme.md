@@ -48,7 +48,11 @@ Removes entries matching a given expectation.
 ```javascript
 import { deleteIf } from 'obbie'
 
-const myObject = { a: 1, b: 2, c: 3 }
+const myObject = {
+  a: 1,
+  b: 2,
+  c: 3
+}
 
 deleteIf(myObject,
          (key, value) => (value % 2) === 0)
@@ -87,24 +91,29 @@ Fetches a value from a given key in the object passed.
 ```javascript
 import { fetch } from 'obbie'
 
-fetch({ a: 1, b: 2 }, 'b')
+const myObject = {
+  a: 1,
+  b: 2
+}
+
+fetch(myObject, 'b')
 //=> 2
 
-fetch({ a: 1, b: 2 }, 'c', 'I love memes')
+fetch(myObject, 'c', 'I love memes')
 //=> 'I love memes'
 
 // It ignores the default value if key returns a value
-fetch({ a: 1, b: 2 }, 'b', 'I love memes')
+fetch(myObject, 'b', 'I love memes')
 //=> 2
 
-fetch({ a: 1, b: 2 }, 'c')
+fetch(myObject, 'c')
 //=> throws 'KeyError: key not found: "c"'
 
-fetch({ a: 1, b: 2 }, 'c', key => `The key is: ${key}`)
+fetch(myObject, 'c', key => `The key is: ${key}`)
 //=> "The key is: c"
 
 // Returns "null" if default value is a function returning "undefined"
-fetch({ a: 1, b: 2 }, 'c', () => {})
+fetch(myObject, 'c', () => {})
 //=> null
 ```
 
