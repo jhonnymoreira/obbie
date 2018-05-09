@@ -117,6 +117,34 @@ fetch(myObject, 'c', () => {})
 //=> null
 ```
 
+### `fetchValues(object: object, keys: string[], defaultValue?: any) => any[]`
+
+Returns the values of the keys in the object using [`Obbie.fetch`](https://git.io/vpiD9).
+
+```javascript
+import { fetchValues } from 'obbie'
+
+fetchValues({ a: 1, b: 2 }, ['a', 'b'])
+//=> [1, 2]
+
+fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], 'I love memes')
+//=> [1, 2, 'I love memes']
+
+// It ignores the default value if key returns a value
+fetchValues({ a: 1, b: 2 }, ['a', 'b'], 'I love memes')
+//=> [1, 2]
+
+fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'])
+//=> throws 'KeyError: key not found: "c"'
+
+fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], key => `The key is: ${key}`)
+//=> [1, 2, 'The key is: c']
+
+// Returns "null" if default value is a function returning "undefined"
+fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], () => {})
+//=> [1, 2, null]
+```
+
 ### `length(object: object) => number`
 
 Returns the amount of entries in a given object.
