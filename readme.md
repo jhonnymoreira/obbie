@@ -124,24 +124,29 @@ Returns the values of the keys in the object using [`Obbie.fetch`](https://git.i
 ```javascript
 import { fetchValues } from 'obbie'
 
-fetchValues({ a: 1, b: 2 }, ['a', 'b'])
+const myObject = {
+  a: 1,
+  b: 2
+}
+
+fetchValues(myObject, ['a', 'b'])
 //=> [1, 2]
 
-fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], 'I love memes')
+fetchValues(myObject, ['a', 'b', 'c'], 'I love memes')
 //=> [1, 2, 'I love memes']
 
 // It ignores the default value if key returns a value
-fetchValues({ a: 1, b: 2 }, ['a', 'b'], 'I love memes')
+fetchValues(myObject, ['a', 'b'], 'I love memes')
 //=> [1, 2]
 
-fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'])
+fetchValues(myObject, ['a', 'b', 'c'])
 //=> throws 'KeyError: key not found: "c"'
 
-fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], key => `The key is: ${key}`)
+fetchValues(myObject, ['a', 'b', 'c'], key => `The key is: ${key}`)
 //=> [1, 2, 'The key is: c']
 
 // Returns "null" if default value is a function returning "undefined"
-fetchValues({ a: 1, b: 2 }, ['a', 'b', 'c'], () => {})
+fetchValues(myObject, ['a', 'b', 'c'], () => {})
 //=> [1, 2, null]
 ```
 
