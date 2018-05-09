@@ -119,7 +119,7 @@ fetch(myObject, 'c', () => {})
 
 ### `fetchValues(object: object, keys: string[], defaultValue?: any) => any[]`
 
-Returns the value of the keys in the object using [`Obbie.fetch`](https://git.io/vpiD9).
+Returns the values of the keys in the object using [`Obbie.fetch`](https://git.io/vpiD9).
 
 ```javascript
 import { fetchValues } from 'obbie'
