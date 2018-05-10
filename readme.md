@@ -41,7 +41,7 @@ compact({ a: { b: null } })
 //=> { a: { b: null } }
 ```
 
-### `deleteIf(object: object, expectation: ?Function = (() => {})) => object`
+### `deleteIf(object: object, expectation?: Function = (() => {})) => object`
 
 Removes entries matching a given expectation.
 
