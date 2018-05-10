@@ -117,7 +117,7 @@ fetch(myObject, 'c', () => {})
 //=> null
 ```
 
-### `fetchValues(object: object, keys: string[], defaultValue?: any) => any[]`
+### `fetchValues(object: object, keys: Array<string|number>, defaultValue?: any) => any[]`
 
 Returns the values of the keys in the object using [`Obbie.fetch`](https://git.io/vpiD9).
 
