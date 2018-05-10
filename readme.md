@@ -117,9 +117,11 @@ fetch(myObject, 'c', () => {})
 //=> null
 ```
 
-### `fetchValues(object: object, keys: string[], defaultValue?: any) => any[]`
+### `fetchValues(object: object, keys: Array<string|number>, defaultValue?: any) => any[]`
 
 Returns the values of the keys in the object using [`Obbie.fetch`](https://git.io/vpiD9).
+
+**NOTE:** Our usage is a little bit different from what Ruby looks like. It accepts the keys (the second argument) as an `Array`. The decision is intended to support an optional parameter `defaultValue`, which can be the `block` (as a function) or any other value.
 
 ```javascript
 import { fetchValues } from 'obbie'
