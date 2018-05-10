@@ -84,7 +84,7 @@ dig(myObject, ['a', 'b', 'c', 1])
 //=> 2
 ```
 
-### `fetch(object: object, key: string, defaultValue: any) => any`
+### `fetch(object: object, key: string, defaultValue?: any) => any`
 
 Fetches a value from a given key in the object passed.
 
