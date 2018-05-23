@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "Ruby Hash methods in JavaScript Object",
   "main": "lib/obbie.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest && yarn lint"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
   "repository": "git@github.com:jhonnymoreira/obbie.git",
   "author": "Jhonny Moreira <me.jhonnymoreira@gmail.com>",
   "contributors": [
