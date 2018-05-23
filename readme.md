@@ -1,4 +1,5 @@
 # Obbie
+[![Build Status](https://travis-ci.org/jhonnymoreira/obbie.svg?branch=master)](https://travis-ci.org/jhonnymoreira/obbie)
 
 Obbie aims to make available Ruby's Hash methods to JavaScript as a collection of functions.
 
