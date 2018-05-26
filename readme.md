@@ -1,6 +1,6 @@
 # Obbie
 [![Build Status](https://travis-ci.org/jhonnymoreira/obbie.svg?branch=master)](https://travis-ci.org/jhonnymoreira/obbie)
-[![Coverage Status](https://coveralls.io/repos/github/jhonnymoreira/obbie/badge.svg?branch=feat%2Fcoveralls-setup)](https://coveralls.io/github/jhonnymoreira/obbie?branch=feat%2Fcoveralls-setup)
+[![Coverage Status](https://coveralls.io/repos/github/jhonnymoreira/obbie/badge.svg?branch=feat%2Fcoveralls-setup)](https://coveralls.io/github/jhonnymoreira/obbie?branch=feat%2Fcoveralls-setup) [![Greenkeeper badge](https://badges.greenkeeper.io/jhonnymoreira/obbie.svg)](https://greenkeeper.io/)
 
 Obbie aims to make available Ruby's Hash methods to JavaScript as a collection of functions.
 
