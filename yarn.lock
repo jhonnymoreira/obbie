@@ -1095,11 +1095,10 @@ commander@^2.11.0:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
-comment-parser@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-0.4.2.tgz#fa5a3f78013070114866dc7b8e9cf317a9635f74"
-  dependencies:
-    readable-stream "^2.0.4"
+comment-parser@^0.5.1:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-0.5.4.tgz#089840b9cccacad2b769b231ed43081d501b9487"
+  integrity sha512-0h7W6Y1Kb6zKQMJqdX41C5qf9ITCVIsD2qP2RaqDF3GFkXFrmuAuv5zUOuo19YzyC9scjBNpqzuaRQ2Sy5pxMQ==
 
 compare-versions@^3.1.0:
   version "3.2.1"
@@ -1358,13 +1357,14 @@ eslint-plugin-jest@^21.5.0:
   version "21.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.5.0.tgz#c7a3bd2ee9d1c832b4e31dec89f6ad93e08d4853"
 
-eslint-plugin-jsdoc@^3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-3.6.3.tgz#8ac4b962964c2893fb0f58c621904203f07bd462"
+eslint-plugin-jsdoc@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-4.0.0.tgz#c791b37597db349e4879f82b7a2625d3eb85f2df"
+  integrity sha512-ItGZcUuaG7IjIdIF4rBOgoo+HRKd7CwzoC9PBrX9a1xwE6VuIxSbRLk411GKCm/mVhbf4vzcGrU/Ggm3bsk6cA==
   dependencies:
-    comment-parser "^0.4.2"
+    comment-parser "^0.5.1"
     jsdoctypeparser "^2.0.0-alpha-8"
-    lodash "^4.17.4"
+    lodash "^4.17.11"
 
 eslint-scope@^3.7.1:
   version "3.7.1"
@@ -2756,6 +2756,11 @@ lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
+lodash@^4.17.11:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+
 log-driver@^1.2.5:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8"
@@ -3297,7 +3302,7 @@ read-pkg@^1.0.0:
     normalize-package-data "^2.3.2"
     path-type "^1.0.0"
 
-readable-stream@^2.0.1, readable-stream@^2.0.4:
+readable-stream@^2.0.1:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   dependencies:
