@@ -23,6 +23,10 @@
       "error",
       "unix"
     ],
+    "no-unused-vars": [
+      "error",
+      { "varsIgnorePattern": "^_$" }
+    ],
     "quotes": [
       "error",
       "single"
