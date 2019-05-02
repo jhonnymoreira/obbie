@@ -12,9 +12,6 @@
   },
   "repository": "git@github.com:jhonnymoreira/obbie.git",
   "author": "Jhonny Moreira <me.jhonnymoreira@gmail.com>",
-  "contributors": [
-    "Alexandre Wiechers <wiechersv@gmail.com>"
-  ],
   "license": "MIT",
   "private": false,
   "devDependencies": {
