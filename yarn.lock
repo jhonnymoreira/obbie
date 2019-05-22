@@ -90,6 +90,22 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@typescript-eslint/experimental-utils@^1.9.1-alpha.3":
+  version "1.9.1-alpha.10"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-1.9.1-alpha.10.tgz#e7d34051d7db6d38242c3dfef36196c9f2258fca"
+  integrity sha512-serdoovBwMk8/jw28LyzO0LVyXjyjMSYs2+EnYFUG/Frbw1u4sYfszDK5pdt96Zw5aAnh5p2ij3FB7mkC/MsOQ==
+  dependencies:
+    "@typescript-eslint/typescript-estree" "1.9.1-alpha.10+5792aa1"
+    eslint-scope "^4.0.0"
+
+"@typescript-eslint/typescript-estree@1.9.1-alpha.10+5792aa1":
+  version "1.9.1-alpha.10"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-1.9.1-alpha.10.tgz#c77886f684325beff00d0453939b5d8a0643b923"
+  integrity sha512-X5Px4dv8gTOMWZJcoZ1NJs41+NV8SG0sdgP+k6aBpXWZ01pkCjQ5KXyy5JWPJ8iA3G3PXB89n17AbXTW/BDFFw==
+  dependencies:
+    lodash.unescape "4.0.1"
+    semver "5.5.0"
+
 abab@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.0.tgz#aba0ab4c5eee2d4c79d3487d85450fb2376ebb0f"
@@ -1463,10 +1479,12 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-jest@^22.0.0:
-  version "22.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.3.0.tgz#a10f10dedfc92def774ec9bb5bfbd2fb8e1c96d2"
-  integrity sha512-P1mYVRNlOEoO5T9yTqOfucjOYf1ktmJ26NjwjH8sxpCFQa6IhBGr5TpKl3hcAAT29hOsRJVuMWmTsHoUVo9FoA==
+eslint-plugin-jest@^22.6.2:
+  version "22.6.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.6.2.tgz#7fded62bfb82c89abd6bf84641f6b2fda72f72fd"
+  integrity sha512-xCkS24evC8gsj9ZBmoRr+S8wxuF5FnKKLmjcAVLz48jYdzkHjkPBwhkBIvJ1GobflCPf55g/0zAUzTtpXRyHaA==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "^1.9.1-alpha.3"
 
 eslint-plugin-jsdoc@^4.1.1:
   version "4.1.1"
@@ -3001,6 +3019,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
+lodash.unescape@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
+  integrity sha1-vyJJiGzlFM2hEvrpIYzcBlIR/Jw=
+
 lodash@^4.17.11, lodash@^4.17.4:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
@@ -3976,6 +3999,11 @@ sax@^1.2.4:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
   integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
+
+semver@5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
+  integrity sha512-4SJ3dm0WAwWy/NVeioZh5AntkdJoWKxHxcmyP622fOkgHa4z3R0TdBJICINyaSDE6uNwVc8gZr+ZinwZAH4xIA==
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
